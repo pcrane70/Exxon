@@ -96,7 +96,22 @@ enum PinAnnotationTypeTag {
     
    //  [self.mapView setRegion:MKCoordinateRegionForMapRect([poly boundingMapRect]) animated:YES];
     
+    
+    
     [self zoomToFitMapAnnotations];
+    
+    
+    NSString* text=@"What's for dinner? Kim Kardashian wants to know!";
+    
+    
+   
+    NSMutableCharacterSet *AcceptedCharacterSet = [[NSMutableCharacterSet alloc] init];
+    [AcceptedCharacterSet formUnionWithCharacterSet:[NSCharacterSet letterCharacterSet]];
+    [AcceptedCharacterSet formUnionWithCharacterSet:[NSCharacterSet decimalDigitCharacterSet]];
+    [AcceptedCharacterSet addCharactersInString:@"'"];
+
+     NSArray *words = [text componentsSeparatedByCharactersInSet:[AcceptedCharacterSet invertedSet]];
+    NSLog(@"%@",words);
     
 }
 
