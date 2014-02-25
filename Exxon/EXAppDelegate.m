@@ -9,6 +9,7 @@
 #import "EXAppDelegate.h"
 #import "EXLoadingViewController.h"
 #import "MPLSplashViewController.h"
+#import "MPLMapViewController.h"
 
 @implementation EXAppDelegate
 
@@ -16,9 +17,12 @@
 {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    MPLSplashViewController *viewController = [[MPLSplashViewController alloc] initWithNibName:@"MPLSplashViewController" bundle:nil];
+    
+//    MPLSplashViewController *viewController = [[MPLSplashViewController alloc] initWithNibName:@"MPLSplashViewController" bundle:nil];
+   
+    MPLMapViewController *viewController = [[MPLMapViewController alloc] initWithNibName:@"MPLMapViewController" bundle:nil];
     self.window.rootViewController = viewController;
-    [self.window makeKeyAndVisible];
+
 
     [self.window makeKeyAndVisible];
     return YES;

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8744E3D918BCF3FD00403156 /* ExxonAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8744E3D818BCF3FD00403156 /* ExxonAnnotation.m */; };
+		8744E3DC18BCF45000403156 /* MobilAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8744E3DB18BCF45000403156 /* MobilAnnotation.m */; };
+		8744E3DE18BD022D00403156 /* userLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 8744E3DD18BD022D00403156 /* userLocation.png */; };
 		8747E93418BA52650090F9FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8747E93318BA52650090F9FE /* Foundation.framework */; };
 		8747E93618BA52650090F9FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8747E93518BA52650090F9FE /* CoreGraphics.framework */; };
 		8747E93818BA52650090F9FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8747E93718BA52650090F9FE /* UIKit.framework */; };
@@ -31,6 +34,10 @@
 		87E1941818BBBF66007298E6 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E1941218BBBF66007298E6 /* logo@2x.png */; };
 		87E1941918BBBF66007298E6 /* red_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E1941318BBBF66007298E6 /* red_bg.png */; };
 		87E1941A18BBBF66007298E6 /* red_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E1941418BBBF66007298E6 /* red_bg@2x.png */; };
+		87E1941F18BBF520007298E6 /* MPLMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E1941D18BBF520007298E6 /* MPLMapViewController.m */; };
+		87E1942018BBF520007298E6 /* MPLMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E1941E18BBF520007298E6 /* MPLMapViewController.xib */; };
+		87E1942418BBFD2E007298E6 /* icon_Exxon.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E1942218BBFD2E007298E6 /* icon_Exxon.png */; };
+		87E1942518BBFD2E007298E6 /* icon_Mobil.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E1942318BBFD2E007298E6 /* icon_Mobil.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8744E3D718BCF3FD00403156 /* ExxonAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExxonAnnotation.h; sourceTree = "<group>"; };
+		8744E3D818BCF3FD00403156 /* ExxonAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExxonAnnotation.m; sourceTree = "<group>"; };
+		8744E3DA18BCF45000403156 /* MobilAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobilAnnotation.h; sourceTree = "<group>"; };
+		8744E3DB18BCF45000403156 /* MobilAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobilAnnotation.m; sourceTree = "<group>"; };
+		8744E3DD18BD022D00403156 /* userLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userLocation.png; path = map/userLocation.png; sourceTree = "<group>"; };
 		8747E93018BA52650090F9FE /* Exxon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exxon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8747E93318BA52650090F9FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8747E93518BA52650090F9FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,6 +87,11 @@
 		87E1941218BBBF66007298E6 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		87E1941318BBBF66007298E6 /* red_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_bg.png; sourceTree = "<group>"; };
 		87E1941418BBBF66007298E6 /* red_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red_bg@2x.png"; sourceTree = "<group>"; };
+		87E1941C18BBF520007298E6 /* MPLMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLMapViewController.h; sourceTree = "<group>"; };
+		87E1941D18BBF520007298E6 /* MPLMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLMapViewController.m; sourceTree = "<group>"; };
+		87E1941E18BBF520007298E6 /* MPLMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPLMapViewController.xib; sourceTree = "<group>"; };
+		87E1942218BBFD2E007298E6 /* icon_Exxon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_Exxon.png; path = map/icon_Exxon.png; sourceTree = "<group>"; };
+		87E1942318BBFD2E007298E6 /* icon_Mobil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_Mobil.png; path = map/icon_Mobil.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +118,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8744E3D618BCF3C700403156 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				8744E3D718BCF3FD00403156 /* ExxonAnnotation.h */,
+				8744E3D818BCF3FD00403156 /* ExxonAnnotation.m */,
+				8744E3DA18BCF45000403156 /* MobilAnnotation.h */,
+				8744E3DB18BCF45000403156 /* MobilAnnotation.m */,
+			);
+			name = Annotation;
+			sourceTree = "<group>";
+		};
 		8747E92718BA52650090F9FE = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +162,7 @@
 		8747E93918BA52650090F9FE /* Exxon */ = {
 			isa = PBXGroup;
 			children = (
+				87E1941B18BBF4D8007298E6 /* MapView */,
 				87E1940818BBB51C007298E6 /* Splash */,
 				8747E96218BA53F70090F9FE /* AnimLoading */,
 				8747E94218BA52650090F9FE /* EXAppDelegate.h */,
@@ -219,6 +248,28 @@
 			path = splash;
 			sourceTree = "<group>";
 		};
+		87E1941B18BBF4D8007298E6 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				8744E3D618BCF3C700403156 /* Annotation */,
+				87E1942118BBFD15007298E6 /* images */,
+				87E1941C18BBF520007298E6 /* MPLMapViewController.h */,
+				87E1941D18BBF520007298E6 /* MPLMapViewController.m */,
+				87E1941E18BBF520007298E6 /* MPLMapViewController.xib */,
+			);
+			name = MapView;
+			sourceTree = "<group>";
+		};
+		87E1942118BBFD15007298E6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8744E3DD18BD022D00403156 /* userLocation.png */,
+				87E1942218BBFD2E007298E6 /* icon_Exxon.png */,
+				87E1942318BBFD2E007298E6 /* icon_Mobil.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,6 +346,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8744E3DE18BD022D00403156 /* userLocation.png in Resources */,
+				87E1942518BBFD2E007298E6 /* icon_Mobil.png in Resources */,
 				87E1941918BBBF66007298E6 /* red_bg.png in Resources */,
 				87E1941A18BBBF66007298E6 /* red_bg@2x.png in Resources */,
 				8747E96718BA54310090F9FE /* EXLoadingViewController.xib in Resources */,
@@ -302,9 +355,11 @@
 				8747E93E18BA52650090F9FE /* InfoPlist.strings in Resources */,
 				87E1941518BBBF66007298E6 /* blue_bg.png in Resources */,
 				87E1941718BBBF66007298E6 /* logo.png in Resources */,
+				87E1942018BBF520007298E6 /* MPLMapViewController.xib in Resources */,
 				8747E96A18BA56C00090F9FE /* bg.png in Resources */,
 				87E1940D18BBBD2E007298E6 /* MPLSplashViewController.xib in Resources */,
 				87E1941818BBBF66007298E6 /* logo@2x.png in Resources */,
+				87E1942418BBFD2E007298E6 /* icon_Exxon.png in Resources */,
 				8747E94618BA52650090F9FE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +381,10 @@
 			files = (
 				8747E96618BA54310090F9FE /* EXLoadingViewController.m in Sources */,
 				8747E94018BA52650090F9FE /* main.m in Sources */,
+				8744E3DC18BCF45000403156 /* MobilAnnotation.m in Sources */,
+				8744E3D918BCF3FD00403156 /* ExxonAnnotation.m in Sources */,
 				8747E96D18BA5A7E0090F9FE /* EXCircleSpinner.m in Sources */,
+				87E1941F18BBF520007298E6 /* MPLMapViewController.m in Sources */,
 				8747E94418BA52650090F9FE /* EXAppDelegate.m in Sources */,
 				87E1940C18BBBD2E007298E6 /* MPLSplashViewController.m in Sources */,
 			);
