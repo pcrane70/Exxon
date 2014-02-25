@@ -13,7 +13,8 @@
     
     IBOutlet UIImageView *redBGImage;
     IBOutlet UIImageView *logoImage;
-    IBOutlet UIImageView *blueBGImage;
+    IBOutlet UIView      *blueBGView;
+    IBOutlet UIImageView *logo2Image;
     
     float screenWidth;
     float animSpeed;
@@ -71,31 +72,40 @@
 -(void)playSplashAnimation
 {
 
-    //set layer
-    blueBGImage.layer.zPosition=1;
-    logoImage.layer.zPosition=2;
-    redBGImage.layer.zPosition=0;
     
     //hide blue bg
-    CGRect blueframe=blueBGImage.frame;
-    blueframe.origin.x=-screenWidth;
-    blueBGImage.frame=blueframe;
+    CGRect blueframe=blueBGView.frame;
+    blueframe.origin.x=-screenWidth-6;
+    blueBGView.frame=blueframe;
     blueframe.origin.x=0;
+    
+    //fade in logo 1
+    logoImage.alpha=0;
+    [UIView animateWithDuration:animSpeed delay:animSpeed
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         logoImage.alpha=1;
 
-   
+                     }
+                     completion:^(BOOL finished){
+                         NSLog(@"done");
+                     }
+     ];
+    
+    
+
     
     CGRect logoframe=CGRectMake(0,0,0,1);
-   // logoframe.size.width=120;
-    logoImage.layer.contentsRect=logoframe;
+    logo2Image.layer.contentsRect=logoframe;
     logoframe.size.width=1;
     
     
-    [UIView animateWithDuration:animSpeed delay:animSpeed
-                        options: UIViewAnimationOptionCurveEaseInOut
+    [UIView animateWithDuration:animSpeed/2 delay:animSpeed*2+0.5
+                        options: UIViewAnimationOptionCurveLinear
                      animations:^{
-                         blueBGImage.frame=blueframe;
+                         blueBGView.frame=blueframe;
                    
-                         logoImage.layer.contentsRect=logoframe;
+                         logo2Image.layer.contentsRect=logoframe;
                      }
                      completion:^(BOOL finished){
                          NSLog(@"done");
@@ -104,14 +114,19 @@
 
     //after speed sec, bring back redBG
     
-    [self performSelector:@selector(showRedBGImage) withObject:nil afterDelay:animSpeed*2 ];
+  //  [self performSelector:@selector(step2) withObject:nil afterDelay:animSpeed*2 ];
 
 
 }
 
--(void)showRedBGImage
+//blue image is sliding in
+-(void)step1
 {
-    blueBGImage.layer.zPosition=0;
+    
+}
+-(void)step2
+{
+    blueBGView.layer.zPosition=0;
     logoImage.layer.zPosition=2;
     redBGImage.layer.zPosition=1;
 

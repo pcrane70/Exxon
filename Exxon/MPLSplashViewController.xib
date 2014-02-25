@@ -6,7 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MPLSplashViewController">
             <connections>
-                <outlet property="blueBGImage" destination="2fF-v5-KkF" id="r3p-2u-X5p"/>
+                <outlet property="blueBGView" destination="H6L-wz-cMh" id="B02-N3-m0j"/>
+                <outlet property="logo2Image" destination="CQv-Uu-S4y" id="tmt-OC-Bcw"/>
                 <outlet property="logoImage" destination="RyE-lg-0s7" id="tbU-9k-y32"/>
                 <outlet property="redBGImage" destination="c7E-TS-yrt" id="lgz-aw-2Lh"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -17,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="2fF-v5-KkF" userLabel="BlueBGImage">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="c7E-TS-yrt" userLabel="RedBGImage">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -25,8 +26,23 @@
                     <rect key="frame" x="0.0" y="179" width="315" height="210"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="c7E-TS-yrt" userLabel="RedBGImage">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H6L-wz-cMh" userLabel="BlueBGView">
+                    <rect key="frame" x="0.0" y="0.0" width="326" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="2fF-v5-KkF" userLabel="BlueBGImage">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="JRg-O4-E6P" userLabel="shadow">
+                            <rect key="frame" x="320" y="0.0" width="6" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="CQv-Uu-S4y" userLabel="Logo2Image">
+                    <rect key="frame" x="0.0" y="179" width="315" height="210"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
@@ -38,6 +54,8 @@
     <resources>
         <image name="blue_bg.png" width="320" height="567"/>
         <image name="logo.png" width="320" height="210"/>
+        <image name="logo2.png" width="320" height="210"/>
         <image name="red_bg.png" width="320" height="567"/>
+        <image name="shadow.png" width="6" height="568"/>
     </resources>
 </document>
